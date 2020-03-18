@@ -95,7 +95,7 @@
         event = event.originalEvent || event;
 
         // Check whether the element is draggable, since dragstart might be triggered on a child.
-        if (element.attr('draggable') == 'false') return true;
+        if (element.attr('draggable') == 'false') return false;
 
         // Initialize global state.
         dndState.isDragging = true;
